@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "32ac830f-3c25-4908-a043-435271b59f63",
+		"name": "Riot games",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get 1 personaje",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/personaje",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personaje"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get 2 maestrias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/maestria",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maestria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get 3 ranked tft",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rankedtft",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rankedtft"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get 4 personaje y maestria",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/personaje-y-maestria",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personaje-y-maestria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get 5 todas las maestrias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/todas-maestrias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"todas-maestrias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post 1 personaje",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"personaje\" : \"shadow919\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/personaje/select",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personaje",
+						"select"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post 2 ranked",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ranked\" : \"Ng09V01Y5ypk5fbJ2yYQxtsyu4x5hWOCeKKzdQ9Uwc_KXw\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/personaje/ranked",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personaje",
+						"ranked"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post 3 rankedTFT",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"Ng09V01Y5ypk5fbJ2yYQxtsyu4x5hWOCeKKzdQ9Uwc_KXw\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/personaje/id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personaje",
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post 4 tft top",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"top\" : \"RANKED_TFT_TURBO\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/TFT/top",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"TFT",
+						"top"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post 5 lol top",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lol\" : \"RANKED_SOLO_5x5\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/lol/top",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lol",
+						"top"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
